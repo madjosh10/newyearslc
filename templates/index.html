@@ -14,15 +14,11 @@
             <h2>COUNT DOWN</h2>
             <div class="countdown">00 : 00 : 00 : 00</div>
             <div>
-                <!-- <a class="btn btn-outline-light" href="{{ url_for('calendar') }}" role="button">Calendar</a> -->
-                <!-- <a class="btn btn-outline-light" href="#" role="button">Pictures</a> -->
+                <a class="btn btn-outline-light" href="{{ url_for('calendar') }}" role="button">Calendar</a> -->
+                <a class="btn btn-outline-light" href="{{ url_for('pictures') }}" role="button">Pictures</a>
             </div>
         </div>
     </header>
 <script src="{{ url_for('static', filename='js/main.js')}}"></script>
-{% block main %}
-
-
-{% endblock %}
 </body>
 </html>

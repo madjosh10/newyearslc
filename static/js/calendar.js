@@ -1,10 +1,3 @@
-{% extends 'base.html' %}
-{% block main %}
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css">
-<script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>
-<div id="calendar">
-</div>
-<script>
 let calendarEl = document.getElementById('calendar');
 let calendar = new FullCalendar.Calendar(calendarEl, {
     initialView: 'listWeek',
@@ -21,5 +14,3 @@ let calendar = new FullCalendar.Calendar(calendarEl, {
     ]
 });
 calendar.render();
-</script>
-{% endblock %}
